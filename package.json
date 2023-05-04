@@ -16,10 +16,14 @@
   "bugs": {
     "url": "https://github.com/SoloBaChi/Go-Transit-App/issues"
   },
+  "engines": {
+    "node": ">=18 <19"
+  },
   "homepage": "https://github.com/SoloBaChi/Go-Transit-App#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^7.1.0"
   }
