@@ -1,6 +1,6 @@
 import express from "express";
 import mongoose from 'mongoose'; 
-const connectDB =require('./backend/database/connection.js');
+import connectDB from './backend/database/connection.js'
 import User from './backend/models/user-model.js';
 import router from "./backend/routes/user-routes.js";
 import bookingRouter from "./backend/routes/booking-routes.js";
@@ -20,7 +20,8 @@ app.use(urlencoded({extended:true}))
 app.use(cors)
 
 //configure env file
-config({path:".env"})
+dotenv.config({ path: ".env" });
+connectDB();
 
 app.get('/', (req,res) => {
     res.json({message: "Hey there! Welcome to this API Service!"});
