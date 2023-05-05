@@ -15,7 +15,8 @@ const UserSchema = new Schema({
         required: true,
         unique: true,
         minlength: 8
-    }
+    },
+    token:{type:String}
 })
 
 export default model('User', UserSchema)

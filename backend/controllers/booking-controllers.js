@@ -3,7 +3,7 @@ import User from "../models/user-model.js"
 import Booking from "../models/booking-model.js"
 
 export const createBooking = async(req, res, next) => {
-    const {departure, destination, date, time, seatNumber, price} = req.body;
+    const {departure, destination, date, time, seatNumber, numberOfSeats, price} = req.body;
 
     let existingUser;
     try{
@@ -14,7 +14,7 @@ export const createBooking = async(req, res, next) => {
     if(!existingUser) {
         return res.status(400).json({message:  "Unable To Find User By This ID"})
     }
-    const booking = new Booking({departure, destination, date, time, seatNumber, price})
+    const booking = new Booking({departure, destination, date, time, seatNumber, numberOfSeats, price})
     try {
         const session = await mongoose.startSession()
         session.startTransaction()
@@ -28,3 +28,16 @@ export const createBooking = async(req, res, next) => {
     }
     return res.status(200).json({booking})
 } 
+
+export const getBookings= async(req, res, next) => {
+    let bookings;
+    try{
+        bookings = await Booking.findbyId(User)
+    } catch(err){
+        return console.log(err)
+    }
+    if(!bookings){
+        return res.status(404).json({message: "No Bookings Found"})
+    }
+    return res.status(200).json(bookings)
+}
