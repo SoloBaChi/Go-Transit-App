@@ -1,5 +1,6 @@
 import express from "express";
 import mongoose from 'mongoose'; 
+const connectDB =require('./backend/database/connection.js');
 import User from './backend/models/user-model.js';
 import router from "./backend/routes/user-routes.js";
 import bookingRouter from "./backend/routes/booking-routes.js";
@@ -8,7 +9,7 @@ import pkg from 'body-parser';
 const { json, urlencoded } = pkg
 import cors from 'cors';
 import { config } from "dotenv";
-import jwt from 'jsonwebtoken'
+
 
 
 //core middlewares
