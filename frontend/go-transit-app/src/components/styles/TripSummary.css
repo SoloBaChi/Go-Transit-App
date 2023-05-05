@@ -1,0 +1,190 @@
+.seatShow{
+    position: absolute;
+    width: 70vw;
+    height: 804px;
+    left: 15%;
+    top: 201px;
+    background: #E5E5F3;
+    border-radius: 20px;
+    color: black;
+}
+.seatPictorial .div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seatPictorial img{
+    font-size: 0.57vw;
+}
+.seatPictorial .div div{
+    margin: 80px 35px 0px;
+}
+.seatRow{
+    position: absolute;
+    width: 430px;
+    height: 391px;
+    left: calc(50% - 430px/2);
+    top: 324px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.seatRow div img{
+    font-size: 0.67vw;
+    color: #D9D9D9;
+}
+.seatRow div:nth-of-type(1){
+    position: absolute;
+    left: 15%;
+    top: 12%;
+}
+.seatRow div:nth-of-type(2){
+    position: absolute;
+    left: 45%;
+    top: 12%;
+}
+.seatRow div:nth-of-type(3){
+    position: absolute;
+    left: 15%;
+    top: 32%;
+}
+.seatRow div:nth-of-type(4){
+    position: absolute;
+    left: 45%;
+    top: 32%;
+}
+.seatRow div:nth-of-type(5){
+    position: absolute;
+    left: 15%;
+    top: 53%;
+}
+.seatRow div:nth-of-type(6){
+    position: absolute;
+    left: 45%;
+    top: 53%;
+}
+.seatRow div:nth-of-type(7){
+    position: absolute;
+    left: 75%;
+    top: 53%;
+}
+.seatRow div:nth-of-type(8){
+    position: absolute;
+    left: 15%;
+    top: 75%;
+}
+.seatRow div:nth-of-type(9){
+    position: absolute;
+    left: 45%;
+    top: 75%;
+}
+.seatRow div:nth-of-type(10){
+    position: absolute;
+    left: 75%;
+    top: 75%;
+}
+.tripSummaryDetails .tripDetails{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1070px;
+    color: black;
+    left: 6vw;
+}
+.tripSummaryDetails .tripDetails .details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 42vw;
+    height: 792px;
+    color: black;
+}
+.tripSummaryDetails .details div{
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    justify-content: space-evenly;
+}
+.tripSummaryDetails .details .input{
+    width: 43.75vw;
+    height: 82px;
+    background: #E5E5F3;
+    border-radius: 10px;
+    border-style: none;
+    padding-left: 2vw;
+}
+.tripSummaryDetails .tripDetails .tripCheckout .tripCheckoutLayer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 42vw;
+    height: 600px;
+    background: #E5E5F3;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+.tripSummaryDetails .tripDetails .tripCheckout{
+    margin: -60px 0px 0px 80px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.tripCheckout h1{
+    margin-left: -29vw;
+
+}
+.tripSummaryDetails .tripDetails .tripCheckout.tripCheckoutLayer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+.btnDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vw;
+    margin-top: 150px;
+}
+.backbtn{
+    border: 1px solid #262688;
+    color: #262688;
+    background: #D8D8F1;
+    border-radius: 10px;
+    width: 17vw;
+    height: 70px;
+    font-weight: 400;
+    font-size: 25px;
+}
+.paybtn{
+    background: #262688;
+    border-radius: 10px;
+    width: 17vw;
+    height: 70px;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.edit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:  40vw;
+    height: 35px;
+    margin: 0px;
+}
+@media screen and (max-width: 550px) {
+    .tripDetails{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .seatPictorial{
+        width: auto;
+    }
+    .tripCheckout{
+        margin-top: 200px;
+    }
+    
+}
