@@ -1,7 +1,12 @@
-const express = require("express");
-const { json, urlencoded }  = require('body-parser');
-const cors = require('cors');
-const dotenv = require("dotenv");
+import express from "express";
+import mongoose from 'mongoose'; 
+import router from "./backend/routes/user-routes.js";
+import bookingRouter from "./backend/routes/booking-routes.js";
+import bodyParser from "body-parser";
+import pkg from 'body-parser';
+const { json, urlencoded } = pkg
+import cors from 'cors';
+import { config } from "dotenv";
 
 
 
@@ -13,14 +18,18 @@ app.use(urlencoded({extended:true}))
 app.use(cors)
 
 //configure env file
-dotenv.config({path:".env"})
+config({path:".env"})
 
 
 
 
 const PORT = process.env.PORT || 4000;
- exports.start = () => {
+ export function  start() {
  app.listen(PORT,()=>{
  console.log(`Server Listening to port ${PORT} rn`)
  })
 }
+
+
+app.use('/user', router)
+app.use('/booking', bookingRouter)
