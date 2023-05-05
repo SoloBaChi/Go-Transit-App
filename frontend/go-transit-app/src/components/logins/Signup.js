@@ -95,7 +95,7 @@ function Signup() {
 
            <div className="txt">
           <div className="read">  
-          I have read, understood and agree to be bound by the following <span><b>  Terms and condition</b>  </span> 
+          I have read, understood and agree to be bound by the following &nbsp; <span><b>  Terms and condition</b>  </span> 
           </div> 
            <div> Already have an account? <Link to="/signin" className='link'> <span> <b> Login here</b></span> </Link>  </div>
            </div>
