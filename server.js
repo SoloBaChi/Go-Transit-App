@@ -7,6 +7,7 @@ import bookingRouter from "./backend/routes/booking-routes.js";
 import bodyParser from "body-parser";
 import pkg from 'body-parser';
 const { json, urlencoded } = pkg
+import dotenv from 'dotenv'
 import cors from 'cors';
 import { config } from "dotenv";
 
