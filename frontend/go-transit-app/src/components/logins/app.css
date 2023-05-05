@@ -1,0 +1,81 @@
+form{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    color:#545497;
+    background-color: #D9D9D9;
+    border: 2px solid #E5E5F3;
+    margin-bottom: 30px;
+    width: 500px;
+    height: 60px;
+    font-size: 15px;
+   
+}
+.btn{
+    width: 560px;
+    padding: 20px;
+    height: 70px;
+    color: white;
+    border-radius: 10px;
+    font-size: 23px ;
+    background-color: #262688;
+    cursor: pointer;
+
+}
+.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn-google{
+    width: 560px;
+    padding: 20px;
+    height: 50px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px ;
+    background-color: #212121;    
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn-google img{
+    width: auto;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.check{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-top:9px;
+    border: 2px solid black;
+}
+
+.text{
+    display: flex;
+    font-size: 13px;
+    margin-top: 20px;
+
+    
+}
+.read{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+
+}
+span{
+    color: #262688;
+}
