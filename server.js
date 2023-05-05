@@ -29,14 +29,12 @@ app.get('/', (req,res) => {
 })
 
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 export function  start() {
     app.listen(PORT,()=>{
         console.log(`Server Listening on port ${PORT} `)
     })
 }
-mongoose.connect(process.env.DATABASE_URL). then(() => app.listen(PORT)).then(() => console.log('Connected to database '))
-.catch(err =>console.log("Could Not Connect To The Database"))
 
 app.use('/user', router)
 app.use('/booking', bookingRouter)
