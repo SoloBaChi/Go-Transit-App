@@ -6,20 +6,12 @@ padding:2rem;
 /* Home  Styles */
 .home-wrapper{
 position: relative;
+/* height:100vh; */
 }
 .home-wrapper
 p{
 padding:0;
 margin:0;
-}
-.home-wrapper
-.absolute-container
-form{
-border-radius:8px;
-position:absolute;
-top:25px;
-right:20px;
-background-color:#fff;
 }
 
 .home-wrapper
@@ -28,17 +20,12 @@ form>*{
 margin-bottom:0.8em;
 padding:0rem 1rem;
 }
-.home-wrapper
-.absolute-container
-form>*:last-child{
-/* padding:0; */
-}
+
 .home-wrapper
 .absolute-container
 form>*:first-child{
 border-radius:8px 8px 0 0;
 color:#fff;
-/* height:50px; */
 background-color:#262688;
 padding:0.6rem;
 }
@@ -53,13 +40,13 @@ img{
 width:100%;
 height:100%;
 object-fit:cover;
-object-position:60% 100%;
+object-position:65% 100%;
 border-radius:inherit;
 }
 .home-wrapper
 .img-container{
  border-radius:6px;
- height:120vh;
+ height:100%;
 }
 .home-wrapper
 .cta-btn{
@@ -68,7 +55,6 @@ padding:0.8rem;
 background: #262688;
 border-radius: 10px;
 color:#fff;
-/* margin-left:1rem; */
 width:100%;
 margin:2rem 0 0 0;
 }
@@ -93,6 +79,7 @@ border-radius:8px;
 display:flex;
 flex-flow:row wrap;
 align-items:center;
+justify-content:space-between;
 }
 .home-wrapper
 .absolute-container
@@ -125,18 +112,12 @@ font-size:1.1rem;
 text-transform:uppercase;
 color:#000000;
 }
-.trip-summary
-.seats-state{
 
-}
 
 
 
 
 /* Contact Us Section */
-.contactus-bg{
-
-}
 .bottom-section{
 background: #D8D8F1;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -151,7 +132,7 @@ margin-bottom:1rem;
 .bottom-section 
 .cta-btn{
 border:none;
-padding:0.7rem;
+padding:1rem;
 background: #262688;
 border-radius: 10px;
 color:#fff;
@@ -167,11 +148,26 @@ text-transform:capitalize;
 width:100%;
 margin-bottom:1rem;
 outline:none;
+background-color:#fff;
 }
 
 
 
 @media(min-width:980px){
+.home-wrapper{
+height:100vh;
+}
+.home-wrapper
+.absolute-container
+form{
+border-radius:8px;
+position:absolute;
+top:25px;
+right:20px;
+background-color:#fff;
+}
+
+
 .contactus-wrapper
 .flex-container{
 display:flex;
@@ -191,7 +187,6 @@ align-items:baseline;
 .home-wrapper
 .absolute-container
 form{
-top:10px;
 right:60px;
 }
 }

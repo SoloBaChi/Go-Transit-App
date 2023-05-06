@@ -1,0 +1,54 @@
+.logo img{
+    width: 20.72vw;
+    height: 10.7vh;
+    position: absolute;
+    left: 4vw;
+    top: 4%;
+    border-radius: 0px;
+}
+.navbarBtn{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 0;
+    left: 30.5%;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5vw;
+    width: 60.53vw;
+    height: 6.5vh;
+}
+.navbar .button{
+    display: flex;
+    align-items: center;
+    height: 3em;
+}
+.navbar button i{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.navbar button{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2vw;
+    line-height: 2.9vh;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    border-style: none;
+    color: #212121;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+@media screen and (max-width: 550px) {
+    .navbar button{ 
+        font-size: 10.5px;
+        text-align: center;
+    }
+    
+}

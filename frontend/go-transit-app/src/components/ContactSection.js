@@ -7,7 +7,7 @@ function ContactSection(){
                          Be the first to hear about it
                         </p>
                         <form>
-                        <input type="email" placeholder='enter email'/>
+                        <input type="email" className="contactEmail" placeholder='enter email'/>
                         <button type='submit' className='cta-btn'>Subscribe</button>
                         </form>
                     </div>

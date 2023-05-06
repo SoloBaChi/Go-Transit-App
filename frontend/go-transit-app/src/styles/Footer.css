@@ -1,0 +1,92 @@
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 478px;
+    background-color: #262688;
+    bottom: 0;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+.footer .footerLogo img{
+    position: absolute;
+    width: 20.72vw;
+    height: 10.7vh;
+    left: 2%;
+    top: 15%;
+}
+.footerLinks{
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10.9vw;
+    position: absolute;
+    width: 58.08vw;
+    height: 22.1vh;
+    left: 28%;
+    top: 15%;
+}
+.footerLinks ul{
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.08vw;
+    line-height: 2.9vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3.7vw;
+}
+.footerLinks ul li{
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.66vw;
+    line-height: 2.4vh;
+    list-style-type: none;
+}
+.footerLinks ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.footerIcons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 0.9vw;
+    position: absolute;
+    width: 10.83vw;
+    height: 6.1vh;
+    left: 84%;
+    top: 82%;
+}
+.footerIcons div{
+    padding: 0.4em 0.6em;
+    border-radius: 1.8em;
+    background-color: #FFFFFF;
+}
+.footerIcons img{
+    width: 20px;
+    height: 20px;
+}
+@media screen and (max-width: 550px) {
+    .footer{
+        height: 200px;
+    }
+    .footerIcons img{ 
+        width: 9px;
+        height: 9px;
+    }
+    .footerIcons div{
+        padding: 0.4px 4px;
+        border-radius: 0.9em;
+        background-color: #FFFFFF;
+    }
+    .footerLinks ul li{
+    font-size: 6.5px;
+    }
+    .footerLinks ul{
+        font-size: 8px;
+    }
+    
+}
