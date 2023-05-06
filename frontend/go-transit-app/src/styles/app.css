@@ -1,10 +1,12 @@
+.container
 form{
-    margin-top: 200px;
+    margin-top:2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+.container
 input{
     padding: 10px 30px 10px 30px;
     border-radius: 5px;
@@ -17,7 +19,7 @@ input{
     font-size: 15px;
    
 }
-
+.container
 .btn{
     width:80%;
     padding: 20px;
@@ -29,12 +31,14 @@ input{
     cursor: pointer;
 
 }
+.container
 .txt{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+.container
 .btn-google{
     width:80%;
     padding: 20px;
@@ -54,7 +58,7 @@ input{
     height: 20px;
     margin-right: 5px;
 }
-
+.container
 .check{
     width: 20px;
     height: 20px;
@@ -62,7 +66,7 @@ input{
     margin-top:9px;
     border: 2px solid black;
 }
-
+.container
 .text{
     display: flex;
     font-size: 13px;
@@ -70,6 +74,7 @@ input{
 
     
 }
+.container
 .read{
     display: flex;
     justify-content: center;
@@ -77,6 +82,7 @@ input{
     font-size: 13px;
 
 }
+.container
 span{
     color: #262688;
 }
@@ -86,8 +92,11 @@ span{
 
 
 @media(min-width:980px){
+.container
 input,
+.container
 .btn-google,
+.container
 .btn{
 width:560px;
 }

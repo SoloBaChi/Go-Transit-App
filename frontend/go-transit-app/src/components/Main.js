@@ -2,9 +2,10 @@ import React from 'react';
 import Home from './Home';
 import ContactSection from './ContactSection';
 import Header from './Header';
-// import Footer from "./Footer";
-// import Signup from "./Signup";
-// import SignIn from './SignIn';
+import Footer from './Footer';
+import "../styles/Main.css";
+import Signup from "./Signup";
+import SignIn from './SignIn';
 // import TripSummary from './TripSummary';
 import { Route,Routes } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -13,20 +14,20 @@ import { BrowserRouter as Router } from 'react-router-dom';
 function Main(props) {
     return (
         <div>
-           {/* <Header/>  */}
+            <div className="Header">
+           <Header/> 
+           </div>
            <Router>
            <Routes>
-                {/* <Route path='/' element={<><Home/><ContactSection/></>}></Route> */}
-                {/* <Route path='/' element={<><Signup/><ContactSection/></>}></Route> */}
-                {/* <Route path='/' element={<><SignIn/><ContactSection/></>}></Route> */}
-                <Route path='/' element={<><Header/></>}></Route>
-                {/* <Route path='' element={<><TripSummary/><ContactSection/></>}></Route> */}
+                <Route path='/' element={<Home/>}/>
+                <Route path='signup' element={<Signup/>}/>
+                <Route path='/signin' element={<SignIn/>}></Route>  
             </Routes>
-           {/* <Signup/> */}
-           {/* <Login/> */}
-           {/* <Footer/> */}
            </Router>
-           
+           <div className="Footer">
+           <ContactSection/>
+           <Footer />
+           </div>
         </div>
     );
 }

@@ -1,13 +1,14 @@
 import React from 'react';
 import '../styles/Footer.css';
-// import FooterLogo from './images/FooterLogo.png'
-import instagram from './images/instagram.png'
-import facebook from './images/facebook.png'
-import twitter from './images/twitter.png'
+import FooterLogo from '../images/FooterLogo.png'
+import instagram from '../images/instagram.png'
+import facebook from '../images/facebook.png'
+import twitter from '../images/twitter.png'
 
 function Footer(props) {
     return (
-            <div className='footer'>
+        <div className='footer-wrapper'>
+        <div className='footer'>
             <div className='footerLogo'>
                 <img src={FooterLogo} alt='Logo' />
             </div>
@@ -39,6 +40,7 @@ function Footer(props) {
                 </div>
             </div>
 
+        </div>
         </div>
     );
 }

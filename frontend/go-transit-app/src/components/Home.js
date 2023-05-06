@@ -1,5 +1,7 @@
 import React from 'react';
 import homeImageBg from "../images/go-transit-home.png";
+import { Link } from 'react-router-dom';
+
 function Home(props) {
     return (
        <div className='pd-x'>
@@ -14,7 +16,7 @@ function Home(props) {
         </div>
         <div className='form-body'>
         <div className='form-field'>
-         <select id='select' value="select">
+         <select id='select'>
             <option value="">travelling from </option>
             <option value="enugu">Enugu </option>
             <option value="lagos">Lagos </option>
@@ -23,7 +25,7 @@ function Home(props) {
          </select>
          </div>
          <div className='form-field'>
-         <select id='select' value="select">
+         <select id='select'>
             <option value="">travelling to </option>
             <option value="ekiti">Ekiti </option>
             <option value="benue">Benue </option>
@@ -43,7 +45,7 @@ function Home(props) {
          </div>
 
          <div className='form-field'>
-         <select id='select' value="select">
+         <select id='select'>
             <option value="">Time of  travel </option>
             <option value="morning">Morning </option>
             <option value="afternoon">Afternoon </option>
@@ -52,7 +54,7 @@ function Home(props) {
          </div>
 
          <div className='form-field'>
-         <select id='select' value="select">
+         <select id='select' >
             <option value="">Number of Tickets </option>
             <option value="1">1 </option>
             <option value="4">4 </option>
@@ -64,7 +66,7 @@ function Home(props) {
         </div>
         <div className='form-footer'>
             <button type='submit' className='cta-btn'>
-                Proceed
+            <Link className='link' to ="/signup"> Proceed</Link>
             </button>
         </div>
        </form>
