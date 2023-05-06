@@ -2,6 +2,7 @@ import React from 'react';
 import { HiChevronDown } from "react-icons/hi";
 import LOGO from '../images/LOGO.png';
 import '../styles/Header.css';
+import { Link } from 'react-router-dom';
 
 function Header(props) {
     return (
