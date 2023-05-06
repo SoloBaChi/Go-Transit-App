@@ -19,7 +19,7 @@ function Main(props) {
                 {/* <Route path='/' element={<><Home/><ContactSection/></>}></Route> */}
                 {/* <Route path='/' element={<><Signup/><ContactSection/></>}></Route> */}
                 {/* <Route path='/' element={<><SignIn/><ContactSection/></>}></Route> */}
-                <Route path='/' element={<><Header/><ContactSection/></>}></Route>
+                <Route path='/' element={<><Header/></>}></Route>
                 {/* <Route path='' element={<><TripSummary/><ContactSection/></>}></Route> */}
             </Routes>
            {/* <Signup/> */}
